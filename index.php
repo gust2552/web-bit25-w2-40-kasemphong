@@ -20,7 +20,7 @@
 <form action="result.php" method="post">
     <h2>กิโลกรัมเป็นปอนด์</h2>
     <label for="">กรุณากรอก</label>
-   <div><input type="number" name="num1" id="kg" placeholder="กิโลกรัม"><br></div>
+   <div><input type="number" name="kg1" id="kg" placeholder="กิโลกรัม"><br></div>
 
 <button>แปลง</button>
  

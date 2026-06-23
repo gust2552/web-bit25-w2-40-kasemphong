@@ -10,15 +10,15 @@
     <p class="kg-box">
 <?php
        
-        $num1 = $_POST["num1"];
+        $kg1 = $_POST["kg1"];
         
       
         
-        echo  $num1 . " กิโลกรัม "  ."<br>";
+        echo  $kg1 . " กิโลกรัม "  ."<br>";
         
 
-        $total = $num1 * 2.20462;
-        echo " เท่ากับ " . $total . " ปอนด์ " ."<br>";
+        $Pound = $kg1 * 2.20462;
+        echo " เท่ากับ " . $Pound . " ปอนด์ " ."<br>";
     ?>
     </p>
     
