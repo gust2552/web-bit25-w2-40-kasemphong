@@ -1,72 +1,117 @@
-*{
-    box-sizing: border-box;
+/* รีเซ็ตค่าเริ่มต้นและตั้งค่าฟอนต์ */
+* {
     margin: 0;
-    padding: 5;}
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-body{
-    background-color: rgb(195, 242, 244);
-   display: flex;
-  justify-content: center; 
-  align-items: center;      
-  padding: 20px;
-  flex-direction: column;
-  min-height: 70vh;
-}
-h2{
-    align-items: center;
+/* ส่วนของพื้นหลังทั้งหมด */
+body {
+    background-color: #f4f7f5; /* สีพื้นหลังเขียวอมเทาอ่อนๆ */
+    color: #333;
     display: flex;
-    justify-content: center;
-}
-h1{
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* หัวข้อใหญ่ด้านบนสุด */
+h1 {
+    font-size: 1.5rem;
+    color: #2e6f40;
+    margin-bottom: 30px; /* เว้นระยะห่างด้านล่าง */
     text-align: center;
-    color: rgb(49, 105, 160);
 }
-label{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   font-size: 20px;
-}
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 40px;
-    width: 20px;
-    border-radius: 30;
-}
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-.kg-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 30px;
-    flex-direction: column;
+
+/* ตกแต่งกล่องฟอร์ม และ กล่องผลลัพธ์ */
+form, .kg-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #2e7d32; /* เส้นขอบบนสีเขียวเข้ม */
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 25px; /* เว้นระยะห่างระหว่างกล่องกับองค์ประกอบอื่น */
     text-align: center;
-    margin: 20px;
 }
-a{
-    font-size: 20px;
+
+/* หัวข้อในฟอร์ม */
+h2 {
+    color: #1b5e20;
+    margin-bottom: 20px; /* เว้นระยะห่างใต้หัวข้อ */
+    font-size: 1.3rem;
 }
+
+/* ลาเบลข้อความ */
+label {
+    display: block;
+    margin-bottom: 10px; /* เว้นระยะห่างก่อนถึงช่องกรอก */
+    color: #555;
+    font-weight: bold;
+}
+
+/* ช่องกรอกตัวเลข */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 20px; /* เว้นระยะห่างก่อนถึงปุ่ม */
+    transition: all 0.3s ease;
+}
+
+/* เอฟเฟกต์ตอนคลิกช่องกรอก */
+input[type="number"]:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+/* ปุ่มกดแปลงค่า */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2e7d32; /* ปุ่มสีเขียว */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์วางบนปุ่ม */
+button:hover {
+    background-color: #1b5e20; /* เขียวเข้มขึ้น */
+}
+
+/* การแสดงผลข้อความในหน้าผลลัพธ์ (PHP) */
 .kg-box {
-    border: 2px solid #4CAF50; 
-    border-radius: 8px;        
-    padding: 20px;             
-    background-color: #f9f9f9; 
-    max-width: 300px;         
-    margin: 20px auto;      
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;        
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* ลิงก์ย้อนกลับหน้าแรก */
+a {
+    display: inline-block;
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px; /* เว้นระยะห่างด้านบน */
+    padding: 8px 16px;
+    border: 1px solid #2e7d32;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+/* เอฟเฟกต์ตอนชี้ลิงก์ */
+a:hover {
+    background-color: #2e7d32;
+    color: white;
 }

@@ -22,6 +22,6 @@
     ?>
     </p>
     
-<a class="btn-back" href="index.php">กลับหน้าแรก</a>
+<a href="index.php">กลับหน้าแรก</a>
 </body>
 </html>
